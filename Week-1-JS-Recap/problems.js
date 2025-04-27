@@ -14,4 +14,22 @@ function reverseStr(str) {
 
 console.log(reverseStr("word"))
 
-module.exports = reverseStr
+// problem 2
+function findLargestNum(nums) {
+    let resultNum = nums[0]
+
+    for (let num of nums) {
+        if (num > resultNum) {
+            resultNum = num
+        }
+    }
+
+    return resultNum
+}
+
+console.log(findLargestNum([-3, 10, 3, 4]))
+
+
+
+exports.reverseStr = reverseStr
+exports.findLargestNum = findLargestNum
