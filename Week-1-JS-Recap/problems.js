@@ -29,7 +29,24 @@ function findLargestNum(nums) {
 
 console.log(findLargestNum([-3, 10, 3, 4]))
 
+// Problem 3
+function isPalindrome(str) {
+    var tempStr = str
+    var res = ""
+    for (let char of str) {
+        currChar = tempStr.slice(-1)
+        tempStr = tempStr.slice(0, -1)
+        if (char !== currChar) {
+            return false
+        }
+    }
+    return true
+}
 
+console.log(isPalindrome("car"))
+console.log(isPalindrome("tots"))
+console.log(isPalindrome("racecar"))
 
 exports.reverseStr = reverseStr
 exports.findLargestNum = findLargestNum
+exports.isPalindrome = isPalindrome

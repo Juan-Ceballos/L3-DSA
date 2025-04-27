@@ -1,4 +1,5 @@
-const {reverseStr, findLargestNum} = require('./problems')
+const { describe } = require('yargs')
+const {reverseStr, findLargestNum, isPalindrome} = require('./problems')
 
 
 describe('reverseStr', () => {
@@ -14,5 +15,13 @@ describe('findLargestNum', () => {
         const input = [30, 2, 4, 5]
         const result = findLargestNum(input)
         expect(result).toBe(30)
+    })
+})
+
+describe('isPalindrome', () => {
+    test('checks if string is palindrome', () => {
+        const input = 'racecar'
+        const result = isPalindrome(input)
+        expect(result).toBe(true)
     })
 })
