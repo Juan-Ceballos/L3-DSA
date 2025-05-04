@@ -21,7 +21,6 @@ print(find_max([0, 2, 4, 2]))
 
 def is_palindrome(s):
     temp_str = s 
-    res = ""
     for char in s:
         curr_char = temp_str[len(temp_str) - 1]
         temp_str = temp_str[:-1]

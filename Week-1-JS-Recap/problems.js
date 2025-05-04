@@ -32,7 +32,6 @@ console.log(findLargestNum([-3, 10, 3, 4]))
 // Problem 3
 function isPalindrome(str) {
     var tempStr = str
-    var res = ""
     for (let char of str) {
         currChar = tempStr.slice(-1)
         tempStr = tempStr.slice(0, -1)
